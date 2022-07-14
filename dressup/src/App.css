@@ -1,7 +1,13 @@
 .App {
-  text-align: center;
+  /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+  font-family: 'Montserrat', sans-serif;
 }
-
+ul {
+  padding: 0; 
+  margin: 0;
+  list-style: none;
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
