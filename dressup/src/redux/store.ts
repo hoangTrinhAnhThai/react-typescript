@@ -1,10 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { applyMiddleware, compose, createStore } from "redux";
+import { rootReducer } from "./rootReducer";
+import createSagaMiddleware from 'redux-saga'
 
-export const store = configureStore({
-  reducer: {
 
-  }
-})
+const sagaMiddleware = createSagaMiddleware()
+const store = compose(
+  applyMiddleware(sagaMiddleware)
+) 
+(createStore)
+(rootReducer)
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export default store

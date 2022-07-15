@@ -17,7 +17,7 @@ export const Button = ({
 const ButtonWrapper = styled.button`
   padding: 10px 20px;
   background-color: white;
-  border: 0px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   text-transform: uppercase;
 `;
